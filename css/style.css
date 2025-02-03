@@ -1,0 +1,465 @@
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: "Rubik", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+
+body{
+    background-color: #ffffff;
+}
+
+/*HEADER*/
+
+header{
+    background-color: #08a0452f;
+}
+
+header div.container-fluid{
+    display: flex;
+    justify-content: space-between;
+}
+
+header div.navbar-collapse{
+    justify-content: end;
+    align-items: center;
+}
+
+.nav-link:hover{
+    color:#000000;
+    background-color: #9ba9d8;
+    border: 1px solid #000000;
+}
+
+.nav-link:active{
+    color: #ff0000;
+    border: 1px solid #ff0000;
+}
+
+
+header div.carousel-inner{
+    height: 125px;
+}
+
+
+/*MAIN*/
+
+/*Main index.html*/
+/*
+main.index{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*Estilo para el titulo principal*/
+/*
+main .tiposdediseño{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+main .diseñoscamisetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+*/
+main h1{
+    font-size: 4rem;
+    text-align: center;
+}
+
+main section.camisetastipo{
+    display: flex;
+    justify-content: center;
+}
+
+/*Estilo para los subtitulos*/
+.diseño {
+    font-size: 2rem;
+    margin: 10px;
+}
+
+/*
+main section.tiposdediseño div.contenedorcamisetas{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    margin: 10px;
+}
+*/
+
+main section div img.imagendiseño{
+    width: 80%;
+    height: 250px;
+}
+main section div.accordion{
+    width: 60%;
+}
+
+
+.textodiseño{
+    margin: 20px;
+    text-align: center;
+}
+
+main article.ubicacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+}
+
+main article.ubicacion h3{
+    margin: 20px 40px;
+    font-size: 3rem;
+}
+
+
+
+
+/*Main productos-servicios.html*/
+/*
+main.productos-servicios section.filtrosyorden{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0px;
+}
+*/
+aside.productos-servicios{
+    margin: 20px;
+}
+
+.filtro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 768px){
+    article fieldset{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+    article img.filtrosimg{
+        margin: 0%;
+    }
+    .filtros input{
+        margin: 0%;
+    }
+        .filtros label{
+        margin-right: 0px;
+    }
+}
+
+
+article img.filtrosimg{
+    width: 40px;
+    height: 40px;
+    margin: 5px 20px;
+}
+
+
+.filtros{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.filtros input{
+    margin: 5px;
+}
+
+.filtros label{
+    margin-right: 10px;
+}
+
+.orden{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img.ordenarimg{
+    width: 40px;
+    height: 40px;
+    margin: 5px 20px;
+}
+
+/*
+.catalogoservicio{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+*/
+
+.titulocatalogo{
+    /*width: 65%;*/
+    padding: 15px;
+    border-radius: 5%;
+    background-color: wheat;
+}
+
+
+.catalogo{
+    display: flex;
+    /*width: 60%;*/
+    flex-direction: column;
+    align-items: center;
+}
+
+main section article.productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main section article.productos div{
+    display: flex;
+    flex-direction: column;
+    border-radius: 3%;
+    border: 2px solid #1db522;
+    background-color: #ffffff;
+    width: 40%;
+    align-items: center;
+    margin: 10px;
+}
+main section article div img.imgproducto{
+    border: 2px solid #000000;
+    border-radius: 3%;
+    width: 50%;
+}
+main section article div button{
+    font-weight: 700;
+    padding: 10px;
+}
+main section article div button:hover{
+    font-size: large;
+    color: #23c230;
+    border: 2px solid #000000;
+    background-color: #ffffff;
+}
+main section article div button:active{
+    color: #0a35b4;
+    background-color: #23c23038;
+}
+
+/*
+main.productos-servicios{
+    display: flex;
+    flex-wrap: wrap;
+}
+*/
+
+main article.otrosservicios{
+    text-align: center;
+    background-color: #008cff29;
+    border: 5px solid #000000;
+    max-height: 70%;
+    /*width: 40%;*/    
+}
+main article.otrosservicios img{
+    display: inline-block;
+    width: 60%;
+    height: 35%;
+    border: 2px solid #000000;
+}
+main article.otrosservicios p{
+    margin: 5%;
+}
+main article.otrosservicios span{
+    font-weight: 600;
+    font-style: italic;
+}
+main article.otrosservicios button:hover{
+    font-weight: 600;
+    font-size: large;
+    padding: 1rem;
+}
+
+
+
+/*Main tallas-modelos.html*/
+/*GRILLAS*/
+div.gctallasymodelos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.25fr 4fr 0.5fr;
+    grid-template-areas: 
+        "gctallasymodelosh gctallasymodelosh gctallasymodelosh"
+        "gctallasymodelosm gctallasymodelosm gctallasymodelosm"
+        "gctallasymodelosf gctallasymodelosf gctallasymodelosf"
+    ;
+}
+header.gctallasymodelosh{
+    grid-area: gctallasymodelosh;
+}
+main.gctallasymodelosm{
+    grid-area: gctallasymodelosm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: stretch;
+    justify-content: space-evenly;
+    width: 100%;
+}
+footer.gctallasymodelosf{
+    grid-area: gctallasymodelosf;
+}
+
+main.gctallasymodelosm h1{
+    margin-top: 30px;
+}
+
+main section.tallasymodelos{
+    display: flex;
+    align-items: center;
+    width: 95%;
+}
+
+main section.tallasymodelos{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    border: 1px solid #000000;
+    background-color: #c37ede2e;
+}
+
+div.imgmodelo{
+    width: 30%;
+    align-items: center;
+}
+main section.tallasymodelos img.modelo{
+    width: 90%;
+    margin: 10px;
+    border: 1px solid #000000;
+    border-radius: 3%;
+}
+
+div.textotallasymodelos{
+    width: 30%;
+}
+.textotallasymodelos{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    margin: 5px 10px;
+}
+
+div.imgmedidas{
+    width: 40%;
+}
+main section.tallasymodelos img.medidas{
+    width: 90%;
+    margin: 10px;
+    border: 1px solid #000000;
+}
+
+@media (max-width: 1024px){
+    section.tallasymodelos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    div.imgmodelo{
+        width: 45%;
+    }
+    div.textotallasymodelos{
+        width: 45%;
+    }
+    div.textotallasymodelos p{
+        font-size: 11px;
+    }
+    div.imgmedidas{
+        width: 90%;
+    }
+}
+
+
+
+
+/*FOOTER*/
+
+footer{
+    background-color: #83AF83;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer div li{
+    list-style: none;
+}
+
+.footerinstagram{
+    display: flex;
+    margin: 10px;
+    align-items: center;
+}
+.footerfacebook{
+    display: flex;
+    margin: 10px;
+    align-items: center;
+}
+.footerwhatsapp{
+    display: flex;
+    margin: 10px;
+    align-items: center;
+}
+.footerpaypal{
+    display: flex;
+    margin: 10px;
+    align-items: center;
+}
+
+footer img{
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+}
+
+footer div ul a{
+    color: #000000;
+    text-decoration: none;
+}
+footer div ul a:hover{
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+footer div ul a:active{
+    color: #0000ff;
+}
+
+footer p{
+    font-style: oblique;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 768px){
+
+}
+
+
+
+@media (max-width: 420px){
+    
+}
