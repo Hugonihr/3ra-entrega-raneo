@@ -1,0 +1,20 @@
+@media (max-width: 1024px){
+    section.tallasymodelos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        div.imgmodelo{
+            width: 45%;
+        }
+        div.textotallasymodelos{
+            width: 45%;
+            p{
+                font-size: 11px;
+            }
+        }
+        div.imgmedidas{
+            width: 90%;
+        }
+    }
+}

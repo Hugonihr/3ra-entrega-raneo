@@ -1,0 +1,10 @@
+
+main article.ubicacion{
+    @include caja(flex, center);
+    align-items: map-get($align, cent);
+    width: 35%;
+    h3{
+        margin: 20px 40px;
+        font-size: 3rem;
+    }
+}

@@ -1,0 +1,28 @@
+/*HEADER*/
+
+header {
+    background-color: $color5;
+    div{
+        .container-fluid{
+            @include caja(flex, space-between);
+        }
+        .navbar-collapse{
+            justify-content: map-get($justi, f-end);
+            align-items: map-get($align, cent);
+        }
+        .nav-link{
+            &:hover{
+                color: $color1;
+                background-color: $color5;
+                border: 1px solid $color1;
+            }
+            :active{
+                color: $color7;
+                border: 1px solid $color7;
+            }
+        }
+        .carousel-inner{
+            height: 125px;
+        }
+    }
+}

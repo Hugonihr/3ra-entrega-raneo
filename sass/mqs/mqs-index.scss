@@ -1,0 +1,48 @@
+
+@media (max-width: 950px){
+    main section.tiposdediseño{
+        h1{
+            font-size: 40px;
+        }
+        section.camisetastipo{
+            button.diseño{
+                font-size: 25px;
+            }
+            img.imagendiseño{
+                height: 200px;
+            }
+        }
+    }
+    article.ubicación{
+        h3{
+            font-size: 40px;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    main section.tiposdediseño{
+        section.camisetastipo{
+            button.diseño{
+                font-size: 25px;
+            }
+            p.textodiseño{
+                font-size: 12px;
+            }
+        }
+    }
+    article.ubicación{
+        width: 90%;
+    }
+}
+
+@media (max-width: 500px){
+    main section.tiposdediseño{
+        section.camisetastipo{
+            img.imagendiseño{
+                height: 175px;
+            }
+        }
+    }
+}
+

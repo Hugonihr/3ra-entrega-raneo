@@ -1,0 +1,49 @@
+
+/*FOOTER*/
+
+footer{
+    background-color: $color2;
+    @include caja(flex, space-around);
+    align-items: map-get($align, cent);
+    
+    div{
+        &.footerinstagram {
+            display: flex;
+            margin: 10px;
+            align-items: map-get($align, cent);
+        }
+        &.footerfacebook{
+            @extend .footerinstagram;
+        }
+        &.footerwhatsapp{
+            @extend .footerinstagram;
+        }
+        li{
+            list-style: none;
+            img{
+                width: 25px;
+                height: 25px;
+                margin: 10px;
+            }
+            a{
+                color: #000000;
+                text-decoration: none;
+                &:hover{
+                    color: $color5;
+                    text-decoration: underline;
+                }
+                &:active{
+                    color: $color6;
+                }
+            }
+        }
+        
+        &.footerpaypal{
+            @extend .footerinstagram;
+        }
+    }
+    p{
+        font-style: oblique;
+    }
+}
+

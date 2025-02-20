@@ -1,0 +1,21 @@
+@mixin caja($n1, $n2){
+    display: $n1;
+    justify-content: $n2;
+}
+
+$justi:(
+    f-st: flex-start,
+    f-end: flex-end,
+    cent: center,
+    s-bet: space-between,
+    s-aro: space-around,
+    s-eve: space-evenly,
+);
+
+$align:(
+    f-st: flex-start,
+    f-end: flex-end,
+    cent: center,
+    stc: stretch,
+    bsl: baseline,
+)

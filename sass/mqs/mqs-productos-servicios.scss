@@ -1,0 +1,60 @@
+@media (max-width: 1260px){
+    main article.otrosservicios{
+        height: 1250px;
+    }
+}
+@media (max-width: 993px){
+    main article.otrosservicios{
+        height: 1460px;
+    }
+}
+
+@media (max-width: 768px){
+    aside article {
+        fieldset.filtros{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            input{
+                margin: 0px;
+            }
+            label{
+                margin-right: 0px;
+            }
+        }
+        img.filtrosimg{
+            margin: 0%;
+            width: 30px;
+            height: 30px;
+        }
+        img.ordenarimg{
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    main.productos-servicios{
+        article.otrosservicios{
+            img{
+                width: 250px;
+                height: 235px;
+            }
+            p{
+                font-size: 14px;
+            }
+            height: 900px;
+        }
+    }
+}
+
+@media (max-width: 600px){
+    main.productos-servicios{
+        article.otrosservicios{
+            p{
+                font-size: 11px;
+            }
+            height: 800px;
+        }
+    }
+}

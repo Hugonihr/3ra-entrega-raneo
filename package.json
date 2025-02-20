@@ -1,0 +1,20 @@
+{
+  "name": "entrega_3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch sass/style.scss css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hugonihr/2da-entrega-raneo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hugonihr/2da-entrega-raneo/issues"
+  },
+  "homepage": "https://github.com/Hugonihr/2da-entrega-raneo#readme",
+  "description": ""
+}

@@ -1,0 +1,20 @@
+
+
+main section.camisetastipo{
+    @include caja(flex, center);
+    div{
+        img.imagendiseño{
+            width: 80%;
+            height: 250px;
+        }
+        &.accordion{
+            width: 60%;
+        }
+        &.textodiseño{
+            margin: 20px;
+            text-align: map-get($align, cent);
+        }
+    }
+}
+
+

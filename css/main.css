@@ -1,0 +1,406 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+body {
+  background-color: #e8f1f2;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 10px;
+}
+
+/*HEADER*/
+header {
+  background-color: #e8f1f2;
+}
+header div .container-fluid {
+  display: flex;
+  justify-content: space-between;
+}
+header div .navbar-collapse {
+  justify-content: flex-end;
+  align-items: center;
+}
+header div .nav-link:hover {
+  color: #073b3a;
+  background-color: #e8f1f2;
+  border: 1px solid #073b3a;
+}
+header div .nav-link :active {
+  color: #ff0000;
+  border: 1px solid #ff0000;
+}
+header div .carousel-inner {
+  height: 125px;
+}
+
+/*FOOTER*/
+footer {
+  background-color: #0b6e4f;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer div.footerinstagram, footer div.footerpaypal, footer div.footerwhatsapp, footer div.footerfacebook {
+  display: flex;
+  margin: 10px;
+  align-items: center;
+}
+footer div li {
+  list-style: none;
+}
+footer div li img {
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+}
+footer div li a {
+  color: #000000;
+  text-decoration: none;
+}
+footer div li a:hover {
+  color: #e8f1f2;
+  text-decoration: underline;
+}
+footer div li a:active {
+  color: #0000ff;
+}
+footer p {
+  font-style: oblique;
+}
+
+main section.camisetastipo {
+  display: flex;
+  justify-content: center;
+}
+main section.camisetastipo div img.imagendiseño {
+  width: 80%;
+  height: 250px;
+}
+main section.camisetastipo div.accordion {
+  width: 60%;
+}
+main section.camisetastipo div.textodiseño {
+  margin: 20px;
+  text-align: center;
+}
+
+main article.ubicacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+}
+main article.ubicacion h3 {
+  margin: 20px 40px;
+  font-size: 3rem;
+}
+
+aside.productos-servicios {
+  margin: 20px;
+}
+aside.productos-servicios .filtro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+aside.productos-servicios .filtro article img.filtrosimg {
+  width: 40px;
+  height: 40px;
+  margin: 5px 20px;
+}
+aside.productos-servicios .filtro.filtros {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+aside.productos-servicios .filtro.filtros input {
+  margin: 5px;
+}
+aside.productos-servicios .filtro.filtros label {
+  margin-right: 10px;
+}
+aside.productos-servicios .orden {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+aside.productos-servicios .orden img.ordenarimg {
+  width: 40px;
+  height: 40px;
+  margin: 5px 20px;
+}
+
+main section.catalogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section.catalogo .titulocatalogo {
+  padding: 15px;
+  border-radius: 5%;
+  background-color: #08a045;
+}
+main section.catalogo article.productos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main section.catalogo article.productos div.rotate-in-center {
+  display: flex;
+  flex-direction: column;
+  border-radius: 3%;
+  border: 2px solid #6bbf59;
+  background-color: #e8f1f2;
+  width: 40%;
+  align-items: center;
+  margin: 10px;
+  -webkit-animation: rotate-in-center 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: rotate-in-center 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+main section.catalogo article.productos div.rotate-in-center img.imgproducto {
+  border: 2px solid #073b3a;
+  border-radius: 3%;
+  width: 50%;
+}
+main section.catalogo article.productos div.rotate-in-center button {
+  font-weight: 700;
+  padding: 10px;
+}
+main section.catalogo article.productos div.rotate-in-center button:hover {
+  font-size: large;
+  color: #0b6e4f;
+  border: 2px solid #0b6e4f;
+  background-color: #e8f1f2;
+}
+main section.catalogo article.productos div.rotate-in-center button:active {
+  color: #0000ff;
+  background-color: #6bbf59;
+}
+
+@-webkit-keyframes rotate-in-center {
+  0% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+@keyframes rotate-in-center {
+  0% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+main article.otrosservicios {
+  display: inline-block;
+  height: 1250px;
+  text-align: center;
+  background-color: rgba(0, 140, 255, 0.1607843137);
+  border: 5px solid #073b3a;
+}
+main article.otrosservicios img {
+  display: inline-block;
+  width: 300px;
+  height: 325px;
+  border: 2px solid #073b3a;
+}
+main article.otrosservicios p {
+  margin: 5%;
+}
+main article.otrosservicios p span {
+  font-weight: 600;
+  font-style: italic;
+}
+main article.otrosservicios button:hover {
+  font-weight: 600;
+  font-size: large;
+  padding: 1rem;
+}
+
+/*Main tallas-modelos.html*/
+/*GRILLAS*/
+div.gctallasymodelos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.25fr 4fr 0.5fr;
+  grid-template-areas: "gctallasymodelosh gctallasymodelosh gctallasymodelosh" "gctallasymodelosm gctallasymodelosm gctallasymodelosm" "gctallasymodelosf gctallasymodelosf gctallasymodelosf";
+}
+div.gctallasymodelos header.gctallasymodelosh {
+  grid-area: gctallasymodelosh;
+}
+div.gctallasymodelos main.gctallasymodelosm {
+  grid-area: gctallasymodelosm;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: stretch;
+  justify-content: space-evenly;
+  width: 100%;
+}
+div.gctallasymodelos main.gctallasymodelosm h1 {
+  margin-top: 30px;
+}
+div.gctallasymodelos main.gctallasymodelosm section.tallasymodelos {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  margin: 20px;
+  border: 1px solid #073b3a;
+  background-color: #e8f1f2;
+}
+div.gctallasymodelos main.gctallasymodelosm section.tallasymodelos div.imgmodelo {
+  width: 30%;
+  align-items: center;
+}
+div.gctallasymodelos main.gctallasymodelosm section.tallasymodelos div.imgmodelo img.modelo {
+  width: 90%;
+  margin: 10px;
+  border: 1px solid #073b3a;
+  border-radius: 3%;
+}
+div.gctallasymodelos main.gctallasymodelosm section.tallasymodelos div.textotallasymodelos {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
+  margin: 5px 10px;
+}
+div.gctallasymodelos main.gctallasymodelosm section.tallasymodelos div.imgmedidas {
+  width: 40%;
+}
+div.gctallasymodelos main.gctallasymodelosm section.tallasymodelos div.imgmedidas img.medidas {
+  width: 90%;
+  margin: 10px;
+  border: 1px solid #073b3a;
+}
+div.gctallasymodelos footer.gctallasymodelosf {
+  grid-area: gctallasymodelosf;
+}
+
+@media (max-width: 950px) {
+  main section.tiposdediseño h1 {
+    font-size: 40px;
+  }
+  main section.tiposdediseño section.camisetastipo button.diseño {
+    font-size: 25px;
+  }
+  main section.tiposdediseño section.camisetastipo img.imagendiseño {
+    height: 200px;
+  }
+  article.ubicación h3 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  main section.tiposdediseño section.camisetastipo button.diseño {
+    font-size: 25px;
+  }
+  main section.tiposdediseño section.camisetastipo p.textodiseño {
+    font-size: 12px;
+  }
+  article.ubicación {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  main section.tiposdediseño section.camisetastipo img.imagendiseño {
+    height: 175px;
+  }
+}
+@media (max-width: 1260px) {
+  main article.otrosservicios {
+    height: 1250px;
+  }
+}
+@media (max-width: 993px) {
+  main article.otrosservicios {
+    height: 1460px;
+  }
+}
+@media (max-width: 768px) {
+  aside article fieldset.filtros {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  aside article fieldset.filtros input {
+    margin: 0px;
+  }
+  aside article fieldset.filtros label {
+    margin-right: 0px;
+  }
+  aside article img.filtrosimg {
+    margin: 0%;
+    width: 30px;
+    height: 30px;
+  }
+  aside article img.ordenarimg {
+    width: 30px;
+    height: 30px;
+  }
+  main.productos-servicios article.otrosservicios {
+    height: 900px;
+  }
+  main.productos-servicios article.otrosservicios img {
+    width: 250px;
+    height: 235px;
+  }
+  main.productos-servicios article.otrosservicios p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 600px) {
+  main.productos-servicios article.otrosservicios {
+    height: 800px;
+  }
+  main.productos-servicios article.otrosservicios p {
+    font-size: 11px;
+  }
+}
+@media (max-width: 1024px) {
+  section.tallasymodelos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  section.tallasymodelos div.imgmodelo {
+    width: 45%;
+  }
+  section.tallasymodelos div.textotallasymodelos {
+    width: 45%;
+  }
+  section.tallasymodelos div.textotallasymodelos p {
+    font-size: 11px;
+  }
+  section.tallasymodelos div.imgmedidas {
+    width: 90%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,38 @@
+
+
+aside.productos-servicios{
+    margin: 20px;
+    .filtro{
+        @include caja(flex, center);
+        align-items: map-get($align, cent);
+        article img.filtrosimg{
+            width: 40px;
+            height: 40px;
+            margin: 5px 20px;
+        }
+        &.filtros{
+            display: flex;
+            align-items: map-get($align, cent);
+            text-align: map-get($align, cent);
+            input{
+                margin: 5px;
+            }
+            label{
+                margin-right: 10px;
+            }
+        }
+    }
+    .orden{
+        @include caja(flex, center);
+        align-items: map-get($align, cent);
+        img.ordenarimg{
+            width: 40px;
+            height: 40px;
+            margin: 5px 20px;
+        }
+    }
+}
+
+
+
+

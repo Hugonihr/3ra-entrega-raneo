@@ -1,0 +1,30 @@
+// Reset
+@import './config/colores';
+@import './config/reset';
+@import './config/tipograf';
+@import './config/cajas';
+
+
+//Layout común
+@import './layout/cabeza';
+@import './layout/pie';
+
+//Layout main index
+@import './layout/main-index/diseños';
+@import './layout/main-index/ubicacion';
+
+//Layout main productos-servicios
+@import './layout/main-productos-servicios/ordenyfiltro';
+@import './layout/main-productos-servicios/catalogo';
+@import './layout/main-productos-servicios/otrosservicios';
+
+//Layout main tallas-modelos
+@import './layout/main-tallas-modelos/tallasymodelos';
+
+
+//MediaQueries
+@import './mqs/mqs-index.scss';
+@import './mqs/mqs-productos-servicios.scss';
+@import './mqs/mqs-tallas-modelos.scss';
+
+
