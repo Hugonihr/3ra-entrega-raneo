@@ -1,6 +1,7 @@
 
 main article.ubicacion{
     @include caja(flex, center);
+    flex-direction: column;
     align-items: map-get($align, cent);
     width: 35%;
     h3{

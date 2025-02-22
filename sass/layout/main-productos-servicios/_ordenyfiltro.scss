@@ -5,7 +5,7 @@ aside.productos-servicios{
     .filtro{
         @include caja(flex, center);
         align-items: map-get($align, cent);
-        article img.filtrosimg{
+        img.filtrosimg{
             width: 40px;
             height: 40px;
             margin: 5px 20px;
