@@ -5,16 +5,19 @@
         justify-content: space-around;
         align-items: center;
         div.imgmodelo{
-            width: 45%;
+            width: 90%;
+            margin: 5%;
         }
         div.textotallasymodelos{
-            width: 45%;
+            width: 90%;
+            margin: 5%;
             p{
-                font-size: 11px;
+                font-size: 14px;
             }
         }
         div.imgmedidas{
             width: 90%;
+            margin: 5%;
         }
     }
 }

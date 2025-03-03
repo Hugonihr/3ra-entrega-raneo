@@ -25,19 +25,18 @@ footer{
                 height: 25px;
                 margin: 10px;
             }
-            a{
-                color: #000000;
-                text-decoration: none;
-                &:hover{
-                    color: $color5;
-                    text-decoration: underline;
-                }
-                &:active{
-                    color: $color6;
-                }
+        }
+        a{
+            color: $color5;
+            text-decoration: none;
+            &:hover{
+                color: $color8;
+                text-decoration: underline;
+            }
+            &:active{
+                color: $color7;
             }
         }
-        
         &.footerpaypal{
             @extend .footerinstagram;
         }

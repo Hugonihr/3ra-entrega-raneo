@@ -24,7 +24,7 @@ h2 {
 
 /*HEADER*/
 header {
-  background-color: #e8f1f2;
+  background-color: #FFFCFF;
 }
 header div .container-fluid {
   display: flex;
@@ -35,21 +35,26 @@ header div .navbar-collapse {
   align-items: center;
 }
 header div .nav-link:hover {
-  color: #073b3a;
-  background-color: #e8f1f2;
-  border: 1px solid #073b3a;
+  color: #C3B299;
+  background-color: #FFFCFF;
+  border: 1px solid #C3B299;
 }
 header div .nav-link :active {
   color: #ff0000;
   border: 1px solid #ff0000;
 }
 header div .carousel-inner {
-  height: 125px;
+  height: 250px;
+}
+
+hr {
+  margin: 0;
+  width: 100%;
 }
 
 /*FOOTER*/
 footer {
-  background-color: #0b6e4f;
+  background-color: #247BA0;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -67,16 +72,16 @@ footer div li img {
   height: 25px;
   margin: 10px;
 }
-footer div li a {
-  color: #000000;
+footer div a {
+  color: #FFFCFF;
   text-decoration: none;
 }
-footer div li a:hover {
-  color: #e8f1f2;
+footer div a:hover {
+  color: #50514F;
   text-decoration: underline;
 }
-footer div li a:active {
-  color: #0000ff;
+footer div a:active {
+  color: #ff0000;
 }
 footer p {
   font-style: oblique;
@@ -152,7 +157,8 @@ main section.catalogo {
 }
 main section.catalogo .titulocatalogo {
   padding: 15px;
-  border-radius: 5%;
+  border-radius: 5px;
+  color: #FFFCFF;
   background-color: #08a045;
 }
 main section.catalogo article.productos {
@@ -165,7 +171,7 @@ main section.catalogo article.productos div.rotate-in-center {
   flex-direction: column;
   border-radius: 3%;
   border: 2px solid #6bbf59;
-  background-color: #e8f1f2;
+  background-color: #FFFCFF;
   width: 40%;
   align-items: center;
   margin: 10px;
@@ -173,7 +179,7 @@ main section.catalogo article.productos div.rotate-in-center {
   animation: rotate-in-center 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 main section.catalogo article.productos div.rotate-in-center img.imgproducto {
-  border: 2px solid #073b3a;
+  border: 2px solid #C3B299;
   border-radius: 3%;
   width: 50%;
 }
@@ -183,12 +189,12 @@ main section.catalogo article.productos div.rotate-in-center button {
 }
 main section.catalogo article.productos div.rotate-in-center button:hover {
   font-size: large;
-  color: #0b6e4f;
-  border: 2px solid #0b6e4f;
-  background-color: #e8f1f2;
+  color: #247BA0;
+  border: 2px solid #247BA0;
+  background-color: #FFFCFF;
 }
 main section.catalogo article.productos div.rotate-in-center button:active {
-  color: #0000ff;
+  color: #CBD4C2;
   background-color: #6bbf59;
 }
 
@@ -220,14 +226,14 @@ main article.otrosservicios {
   display: inline-block;
   height: 1250px;
   text-align: center;
-  background-color: rgba(0, 140, 255, 0.1607843137);
-  border: 5px solid #073b3a;
+  background-color: #50514F;
+  border: 5px solid #C3B299;
 }
 main article.otrosservicios img {
   display: inline-block;
   width: 300px;
   height: 325px;
-  border: 2px solid #073b3a;
+  border: 2px solid #C3B299;
 }
 main article.otrosservicios p {
   margin: 5%;
@@ -243,18 +249,7 @@ main article.otrosservicios button:hover {
 }
 
 /*Main tallas-modelos.html*/
-/*GRILLAS*/
-div.gctallasymodelos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 0.25fr 4fr 0.5fr;
-  grid-template-areas: "gctallasymodelosh gctallasymodelosh gctallasymodelosh" "gctallasymodelosm gctallasymodelosm gctallasymodelosm" "gctallasymodelosf gctallasymodelosf gctallasymodelosf";
-}
-div.gctallasymodelos header.gctallasymodelosh {
-  grid-area: gctallasymodelosh;
-}
-div.gctallasymodelos main.gctallasymodelosm {
-  grid-area: gctallasymodelosm;
+main.gctallasymodelosm {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -262,44 +257,46 @@ div.gctallasymodelos main.gctallasymodelosm {
   justify-content: space-evenly;
   width: 100%;
 }
-div.gctallasymodelos main.gctallasymodelosm h1 {
+main.gctallasymodelosm h1 {
   margin-top: 30px;
 }
-div.gctallasymodelos main.gctallasymodelosm section.tallasymodelos {
+main.gctallasymodelosm section.tallasymodelos {
   display: flex;
   align-items: center;
-  width: 95%;
-  margin: 20px;
-  border: 1px solid #073b3a;
-  background-color: #e8f1f2;
+  width: 94%;
+  margin: 3%;
+  border: 1px solid #C3B299;
+  background-color: #FFFCFF;
 }
-div.gctallasymodelos main.gctallasymodelosm section.tallasymodelos div.imgmodelo {
-  width: 30%;
-  align-items: center;
+main.gctallasymodelosm section.tallasymodelos div.tallasymodelos {
+  justify-content: space-around;
 }
-div.gctallasymodelos main.gctallasymodelosm section.tallasymodelos div.imgmodelo img.modelo {
-  width: 90%;
-  margin: 10px;
-  border: 1px solid #073b3a;
-  border-radius: 3%;
-}
-div.gctallasymodelos main.gctallasymodelosm section.tallasymodelos div.textotallasymodelos {
+main.gctallasymodelosm section.tallasymodelos div.modelmedid {
   display: flex;
   flex-direction: column;
-  width: 90%;
   align-items: center;
+  justify-content: center;
+}
+main.gctallasymodelosm section.tallasymodelos div.modelmedid img.modelo {
+  width: 70%;
+  margin: 2%;
+  border: 1px solid #C3B299;
+  border-radius: 3%;
+}
+main.gctallasymodelosm section.tallasymodelos div.modelmedid img.medidas {
+  width: 96%;
+  margin: 2%;
+  border: 1px solid #C3B299;
+}
+main.gctallasymodelosm section.tallasymodelos div.textotallasymodelos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin: 5px 10px;
 }
-div.gctallasymodelos main.gctallasymodelosm section.tallasymodelos div.imgmedidas {
-  width: 40%;
-}
-div.gctallasymodelos main.gctallasymodelosm section.tallasymodelos div.imgmedidas img.medidas {
-  width: 90%;
-  margin: 10px;
-  border: 1px solid #073b3a;
-}
-div.gctallasymodelos footer.gctallasymodelosf {
-  grid-area: gctallasymodelosf;
+main.gctallasymodelosm section.tallasymodelos div.textotallasymodelos p {
+  text-align: justify;
 }
 
 @media (max-width: 950px) {
@@ -391,16 +388,19 @@ div.gctallasymodelos footer.gctallasymodelosf {
     align-items: center;
   }
   section.tallasymodelos div.imgmodelo {
-    width: 45%;
+    width: 90%;
+    margin: 5%;
   }
   section.tallasymodelos div.textotallasymodelos {
-    width: 45%;
+    width: 90%;
+    margin: 5%;
   }
   section.tallasymodelos div.textotallasymodelos p {
-    font-size: 11px;
+    font-size: 14px;
   }
   section.tallasymodelos div.imgmedidas {
     width: 90%;
+    margin: 5%;
   }
 }
 

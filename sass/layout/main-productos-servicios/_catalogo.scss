@@ -5,9 +5,10 @@ main section.catalogo{
     flex-direction: column;
     align-items: map-get($align, cent);
     .titulocatalogo{
-        padding: 15px;
-        border-radius: 5%;
-        background-color: $color3;
+      padding: 15px;
+      border-radius: 5px;
+      color: $color5;
+      background-color: $color3;
     }
     article.productos{
         @include caja(flex, center);
