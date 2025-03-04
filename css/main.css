@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: #e8f1f2;
+  background-color: #FFFCFF;
 }
 
 h1 {
@@ -24,7 +24,8 @@ h2 {
 
 /*HEADER*/
 header {
-  background-color: #FFFCFF;
+  display: flex;
+  justify-content: center;
 }
 header div .container-fluid {
   display: flex;
@@ -35,16 +36,17 @@ header div .navbar-collapse {
   align-items: center;
 }
 header div .nav-link:hover {
-  color: #C3B299;
+  color: #247BA0;
   background-color: #FFFCFF;
-  border: 1px solid #C3B299;
+  border: 1px solid rgba(36, 123, 160, 0.3960784314);
 }
 header div .nav-link :active {
-  color: #ff0000;
-  border: 1px solid #ff0000;
+  color: #ffbb00;
+  border: 1px solid #ffbb00;
 }
-header div .carousel-inner {
-  height: 250px;
+header div .carousel {
+  position: relative;
+  width: 75%;
 }
 
 hr {
@@ -81,38 +83,99 @@ footer div a:hover {
   text-decoration: underline;
 }
 footer div a:active {
-  color: #ff0000;
+  color: #ffbb00;
 }
 footer p {
   font-style: oblique;
+  color: #FFFCFF;
 }
 
-main section.camisetastipo {
+main.index {
+  padding: 30px 0px;
+}
+@keyframes colorChange {
+  0% {
+    color: red;
+  }
+  20% {
+    color: yellow;
+  }
+  40% {
+    color: yellowgreen;
+  }
+  60% {
+    color: green;
+  }
+  75% {
+    color: blue;
+  }
+  90% {
+    color: purple;
+  }
+  100% {
+    color: red;
+  }
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+  0% {
+    font-family: "Roboto", sans-serif;
+  }
+  25% {
+    font-family: "Poppins", sans-serif;
+  }
+  50% {
+    font-family: "Lobster", cursive;
+  }
+  75% {
+    font-family: "Courier Prime", monospace;
+  }
+  100% {
+    font-family: "Roboto", sans-serif;
+  }
+}
+main.index h1 {
+  animation: colorChange 4s infinite;
+  text-shadow: 3px 3px 5px rgba(95, 95, 95, 0.778);
+}
+main.index section.camisetastipo {
   display: flex;
   justify-content: center;
 }
-main section.camisetastipo div img.imagendiseño {
+main.index section.camisetastipo div img.imagendiseño {
   width: 80%;
-  height: 250px;
 }
-main section.camisetastipo div.accordion {
-  width: 60%;
+main.index section.camisetastipo div.accordion {
+  width: 90%;
 }
-main section.camisetastipo div.textodiseño {
+main.index section.camisetastipo div.textodiseño {
   margin: 20px;
   text-align: center;
 }
 
 main article.ubicacion {
+  border: 2px black solid;
+  border-radius: 6px;
+  background-color: #dee8d4;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 35%;
+}
+main article.ubicacion iframe {
+  width: 95%;
+  margin: 15px;
 }
 main article.ubicacion h3 {
   margin: 20px 40px;
   font-size: 3rem;
+  text-shadow: 3px 3px 5px rgba(95, 95, 95, 0.778);
 }
 
 aside.productos-servicios {
@@ -156,10 +219,9 @@ main section.catalogo {
   align-items: center;
 }
 main section.catalogo .titulocatalogo {
-  padding: 15px;
-  border-radius: 5px;
-  color: #FFFCFF;
-  background-color: #08a045;
+  margin: 15px;
+  color: #000000;
+  text-shadow: 3px 3px 5px rgba(95, 95, 95, 0.778);
 }
 main section.catalogo article.productos {
   display: flex;
@@ -169,33 +231,36 @@ main section.catalogo article.productos {
 main section.catalogo article.productos div.rotate-in-center {
   display: flex;
   flex-direction: column;
-  border-radius: 3%;
-  border: 2px solid #6bbf59;
-  background-color: #FFFCFF;
-  width: 40%;
+  border-radius: 5px;
+  border: 2px solid #247BA0;
+  background-color: #dee8d4;
+  width: 35%;
   align-items: center;
+  padding: 10px;
   margin: 10px;
   -webkit-animation: rotate-in-center 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: rotate-in-center 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 main section.catalogo article.productos div.rotate-in-center img.imgproducto {
-  border: 2px solid #C3B299;
-  border-radius: 3%;
+  border: 2px solid #50514F;
+  border-radius: 5px;
   width: 50%;
 }
 main section.catalogo article.productos div.rotate-in-center button {
   font-weight: 700;
   padding: 10px;
+  background-color: #FFFCFF;
+  transition: background-color 0.3s ease, font-size 0.3s ease, color 0.3s ease, border 0.3s ease;
 }
 main section.catalogo article.productos div.rotate-in-center button:hover {
   font-size: large;
-  color: #247BA0;
-  border: 2px solid #247BA0;
-  background-color: #FFFCFF;
+  color: #FFFCFF;
+  border: 2px solid #000000;
+  background-color: #6bbf59;
 }
 main section.catalogo article.productos div.rotate-in-center button:active {
-  color: #CBD4C2;
-  background-color: #6bbf59;
+  color: #ffbb00;
+  background-color: #08a045;
 }
 
 @-webkit-keyframes rotate-in-center {
@@ -226,8 +291,11 @@ main article.otrosservicios {
   display: inline-block;
   height: 1250px;
   text-align: center;
-  background-color: #50514F;
+  background-color: rgba(36, 123, 160, 0.3960784314);
   border: 5px solid #C3B299;
+}
+main article.otrosservicios h2 {
+  text-shadow: 3px 3px 5px rgba(95, 95, 95, 0.778);
 }
 main article.otrosservicios img {
   display: inline-block;
@@ -321,7 +389,7 @@ main.gctallasymodelosm section.tallasymodelos div.textotallasymodelos p {
     font-size: 12px;
   }
   article.ubicación {
-    width: 90%;
+    width: 80%;
   }
 }
 @media (max-width: 500px) {

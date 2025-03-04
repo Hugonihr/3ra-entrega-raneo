@@ -1,18 +1,40 @@
 
-
-main section.camisetastipo{
-    @include caja(flex, center);
-    div{
-        img.imagendiseño{
-            width: 80%;
-            height: 250px;
-        }
-        &.accordion{
-            width: 60%;
-        }
-        &.textodiseño{
-            margin: 20px;
-            text-align: map-get($align, cent);
+main.index{
+    padding: 30px 0px;
+    @keyframes colorChange {
+        0% { color: red; }
+        20% { color: yellow; }
+        40% { color: yellowgreen; }
+        60% { color: green; }
+        75% { color: blue; }
+        90% { color: purple; }
+        100% { color: red; }
+        0% { transform: translateX(0); }
+        50% { transform: translateX(30px); }
+        100% { transform: translateX(0); }
+        0% { font-family: 'Roboto', sans-serif; }
+        25% { font-family: 'Poppins', sans-serif; }
+        50% { font-family: 'Lobster', cursive; }
+        75% { font-family: 'Courier Prime', monospace; }
+        100% { font-family: 'Roboto', sans-serif; }
+    }
+    h1 {
+    animation: colorChange 4s infinite;
+    text-shadow: 3px 3px 5px rgba(95, 95, 95, 0.778);
+    }
+    section.camisetastipo{
+        @include caja(flex, center);
+        div{
+            img.imagendiseño{
+                width: 80%;
+            }
+            &.accordion{
+                width: 90%;
+            }
+            &.textodiseño{
+                margin: 20px;
+                text-align: map-get($align, cent);
+            }
         }
     }
 }

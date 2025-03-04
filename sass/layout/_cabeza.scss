@@ -1,7 +1,8 @@
 /*HEADER*/
 
 header {
-    background-color: $color5;
+    display: flex;
+    justify-content: center;
     div{
         .container-fluid{
             @include caja(flex, space-between);
@@ -12,17 +13,18 @@ header {
         }
         .nav-link{
             &:hover{
-                color: $color1;
+                color: $color2;
                 background-color: $color5;
-                border: 1px solid $color1;
+                border: 1px solid $color10;
             }
             :active{
                 color: $color7;
                 border: 1px solid $color7;
             }
         }
-        .carousel-inner{
-            height: 250px;
+        .carousel {
+            position: relative;
+            width: 75%;
         }
     }
 }

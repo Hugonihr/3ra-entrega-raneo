@@ -5,10 +5,9 @@ main section.catalogo{
     flex-direction: column;
     align-items: map-get($align, cent);
     .titulocatalogo{
-      padding: 15px;
-      border-radius: 5px;
-      color: $color5;
-      background-color: $color3;
+      margin: 15px;
+      color: $color9;
+      text-shadow: 3px 3px 5px rgba(95, 95, 95, 0.778);
     }
     article.productos{
         @include caja(flex, center);
@@ -17,33 +16,37 @@ main section.catalogo{
         div.rotate-in-center{
             display: flex;
             flex-direction: column;
-            border-radius: 3%;
-            border: 2px solid $color4;
-            background-color: $color5;
-            width: 40%;
+            border-radius: 5px;
+            border: 2px solid $color2;
+            background-color: $color6;
+            width: 35%;
             align-items: map-get($align, cent);
+            padding: 10px;
             margin: 10px;
 
             -webkit-animation: rotate-in-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: rotate-in-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
             img.imgproducto{
-                border: 2px solid $color1;
-                border-radius: 3%;
+                border: 2px solid $color8;
+                border-radius: 5px;
                 width: 50%;
             }
             button{
                 font-weight: 700;
                 padding: 10px;
+                background-color: $color5;
+                transition: background-color 0.3s ease, font-size 0.3s ease, color 0.3s ease, border 0.3s ease;
                 &:hover{
                     font-size: large;
-                    color: $color2;
-                    border: 2px solid $color2;
-                    background-color: $color5;
+                    color: $color5;
+                    border: 2px solid $color9;
+                    background-color: $color4;
+                    
                 }
                 &:active{
-                    color: $color6;
-                    background-color: $color4;
+                    color: $color7;
+                    background-color: $color3;
                 }
             }
         }

@@ -3,8 +3,11 @@ main article.otrosservicios{
     display: inline-block;
     height: 1250px;
     text-align: map-get($align, cent);
-    background-color: $color8;
+    background-color: $color10;
     border: 5px solid $color1;
+    h2{
+        text-shadow: 3px 3px 5px rgba(95, 95, 95, 0.778);
+    }
     img{
         display: inline-block;
         width: 300px;
